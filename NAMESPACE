@@ -1,0 +1,3 @@
+import(emplik, stats, graphics, MASS)
+export(spearmanCI, spearmanCI.default)
+S3method(spearmanCI, default)
