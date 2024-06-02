@@ -11,9 +11,9 @@
   \item{x}{vector with data.}
   \item{y}{vector with data.}
   \item{level}{the confidence level required.}
-  \item{method}{This must be one of the strings \code{"Euclidean"} or
+  \item{method}{this must be one of the strings \code{"Euclidean"} or
     \code{"empirical"}; see references below for details.}
-  \item{plot}{plot log-likelihood ratio function?}
+  \item{plot}{logical; if \code{TRUE}, it plots log-likelihood ratio function.}
 }
 \usage{
 spearmanCI(x, y, level = 0.95, method = "Euclidean", plot = FALSE)
@@ -23,7 +23,7 @@ spearmanCI(x, y, level = 0.95, method = "Euclidean", plot = FALSE)
   likelihood-based inference for Spearman's rho. \emph{North American
     Actuarial Journal}, \bold{16}, 487--492.
 
-  Wang, R., and Peng, L. (2011). Jackknife Empirical likelihood
+  Wang, R., and Peng, L. (2011). Jackknife empirical likelihood
   intervals for Spearman’s rho. \emph{North American Actuarial Journal},
   \bold{15}, 475--486.
 }

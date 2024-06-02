@@ -6,7 +6,7 @@
   Danish Fire Insurance Claims Database includes 2167 industrial fire losses
   gathered from the Copenhagen Reinsurance Company over the period 1980–1990.
 }
-\usage{fire}
+\usage{data(fire)}
 \format{A dataframe with 2167 observations on five variables. The object
   is of class \code{data.frame}.}
 \examples{

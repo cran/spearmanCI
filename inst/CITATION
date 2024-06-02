@@ -3,14 +3,24 @@ citHeader("To cite the 'spearmanCI' package in publications use:")
 year <- sub(".*(2[[:digit:]]{3})-.*", "\\1", meta$Date, perl = TRUE)
 vers <- paste("R package version", meta$Version)
 
-citEntry(entry="Manual",
-         title = "spearmanCI: Jackknife Euclidean / Empirical Likelihood Inference for Spearman Rho",
-         author = personList(as.person("M. de Carvalho")),
-         year = year,
-         note = vers,
+# Bibentry for the package
+bibentry(
+    bibtype = "Manual",
+    title = "spearmanCI: Jackknife Euclidean / Empirical Likelihood Inference for Spearman Rho",
+    author = c(person("Miguel", "de Carvalho")),
+    year = year,
+    note = vers,
+    textVersion = paste("Miguel de Carvalho (", year, "). spearmanCI: Jackknife Euclidean / Empirical Likelihood Inference for Spearman Rho. ", vers, ".", sep="")
+)
 
-         textVersion =
-         paste("Miguel de Carvalho(",
-               year,
-               "). spearmanCI: Jackknife Euclidean / Empirical Likelihood Inference for Spearman Rho.",
-               vers, ".", sep=""))
+## citEntry(entry="Manual",
+##          title = "spearmanCI: Jackknife Euclidean / Empirical Likelihood Inference for Spearman Rho",
+##          author = personList(as.person("M. de Carvalho")),
+##          year = year,
+##          note = vers,
+
+##          textVersion =
+##          paste("Miguel de Carvalho(",
+##                year,
+##                "). spearmanCI: Jackknife Euclidean / Empirical Likelihood Inference for Spearman Rho.",
+##                vers, ".", sep=""))
